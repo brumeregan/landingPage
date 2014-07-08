@@ -1,8 +1,28 @@
 body{
-    background-color: gray;
+
     color: wheat;
     box-sizing: border-box;
-    position: static;
+
+
+    /* fallback */
+    background-color: #2F2727;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+
 }
 
 a{
@@ -52,7 +72,6 @@ li{
     color: white;
     font-family: "Courier New";
     font-size: 3em;
-
    border-bottom: 1px solid deepskyblue;
     width: 800px;
 }
@@ -113,9 +132,10 @@ footer{
 .f_left{
     float: left;
     width: 0px;
-
     border-top: 130px solid gray;
     border-right: 190px solid transparent;
+
+
 
 }
 .f_right{
@@ -123,6 +143,7 @@ footer{
     width: 0px;
     border-top: 130px solid gray;
     border-left: 190px solid transparent;
+
 
 
 }
