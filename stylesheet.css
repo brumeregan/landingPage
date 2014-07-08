@@ -1,0 +1,136 @@
+body{
+    background-color: gray;
+    color: wheat;
+    box-sizing: border-box;
+    position: static;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 149px;
+    margin-left: 7px;
+}
+ul{
+    float: left;
+}
+ li.active{
+     position: relative;
+     width: 149px;
+     border-right: none;
+     background-color: rgba(255,255,255, 0.3);
+     border-radius: 5px 0 0 5px;
+     z-index: 111;
+}
+ li:hover{
+     background-color: gray;
+ }
+
+li{
+    list-style-type: none;
+    margin: 1px 0;
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    height: 40px;
+    line-height: 40px;
+ }
+
+#main{
+    background: url(monitor2.png);
+    background-size: cover;
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    z-index: 11;
+}
+#name{
+    position: absolute;
+    margin: 43px 67px;
+    color: white;
+    font-family: "Courier New";
+    font-size: 3em;
+
+   border-bottom: 1px solid deepskyblue;
+    width: 800px;
+}
+#container{
+    position: absolute;
+    margin: 105px 50px;
+}
+#links{
+    float: left;
+}
+
+
+#info{
+    border: 1px solid red;
+    float: right;
+    width: 300px;
+}
+
+
+#form{
+    float: right;
+    position: absolute;
+    margin-left: 190px;
+    width: 628px;
+    height: 390px;
+    overflow: auto;
+    padding: 1px 5px 4px 1px;
+    background-color: rgba(255,255,255, 0.3) ;
+    border: 1px solid #000000;
+    border-radius: 5px;
+   /* z-index: 1;*/
+    border-left: none;
+}
+section{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+footer{
+
+    position: absolute;
+    top: 650px;
+    /*bottom: 0;*/
+    left: 0;
+    right: 0;
+    height: 130px;
+    min-height: 130px;
+    background-image: url("347-11.jpg");
+    z-index: -1;
+
+
+}
+.border{
+
+}
+.f_left{
+    float: left;
+    width: 0px;
+
+    border-top: 130px solid gray;
+    border-right: 190px solid transparent;
+
+}
+.f_right{
+    float: right;
+    width: 0px;
+    border-top: 130px solid gray;
+    border-left: 190px solid transparent;
+
+
+}
+
+.f_center{
+    width: 700px;
+    min-width: 500px;
+
+
+    margin: 0 auto;
+}

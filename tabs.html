@@ -1,0 +1,34 @@
+
+<section id="links" >
+    <ul>
+        <li ng-class="{ active:tab.isSet(1) }">
+            <a href="" ng-click="tab.setTab(1)" >Info</a> </li>
+        <li ng-class="{ active:tab.isSet(2) }">
+            <a href="" ng-click="tab.setTab(2)" >Skills</a></li>
+        <li ng-class="{ active:tab.isSet(3) }">
+            <a href="" ng-click="tab.setTab(3)" >Knowledge</a></li>
+        <li ng-class="{ active:tab.isSet(4) }">
+            <a href="" ng-click="tab.setTab(4)" >Experience</a></li>
+        <li ng-class="{ active:tab.isSet(5) }">
+            <a href="" ng-click="tab.setTab(5)" >Projects</a></li>
+    </ul>
+    <div id="form"  class='mCustomScrollbar' >
+        <div  ng-show="tab.isSet(1)" >
+            <blockquote >
+                <information></information>
+            </blockquote>
+        </div>
+        <div ng-show="tab.isSet(2)">
+            <blockquote> <skills></skills></blockquote>
+        </div>
+        <div ng-show="tab.isSet(3)">
+            <blockquote> <knowledge></knowledge></blockquote>
+        </div>
+        <div ng-show="tab.isSet(4)">
+            <blockquote> <experience></experience></blockquote>
+        </div>
+        <div ng-show="tab.isSet(5)">
+            <blockquote> <projects></projects></blockquote>
+        </div>
+    </div>
+</section>
